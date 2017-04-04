@@ -1,0 +1,109 @@
+<ion-view title="体育资讯">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+
+  <ion-nav-buttons side="right">
+    <!-- <button class="button button-icon icon ion-search"></button> -->
+  </ion-nav-buttons>
+  
+  <ion-content class="has-header gem-ion-content">
+<div class="list">
+  
+</style>
+    <a class="item item-thumbnail-left" ng-repeat="item in sportNews" ng-click="goToDetail(item)">
+      <img style="    height: 80px;" ng-src="{{item.image_url}}">
+      <!-- <img style="    height: 80px;" ng-src="{{}}img/gemionic/news-image.jpg"> -->
+      <h2>{{item.title}}</h2>
+      <p >{{item.abstract}}</p>
+      <p >{{item.behot_time*1000 |date:'yyyy-MM-dd HH:mm:ss'}}</p>
+    </a>  
+
+     
+</div>
+
+    <!-- <div class="news-media">
+      <img src="img/gemionic/news-image.jpg" alt="" class="fluid-image">
+      <div class="media-social-stats stat-label">
+          <span class="news-comment-summary">
+            <i class="icon ion-heart"></i> 2 
+            <i class="icon ion-chatbubble"></i> 3
+          </span>
+        </div>
+    </div>
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="img/gemionic/profile-image.jpg" alt="" class="img">
+      </div>
+      <div class="news-content">
+        <h4>Roberta Simmons</h4>
+        Enim noepe ate praesentium pariatur alias vitae?
+        <div class="other-stats">
+          <button class="button button-balanced button-borderless button-small"><i class="ion-heart"></i> 82</button>
+          <button class="button button-stable button-outline button-small"><i class="ion-heart"></i> 82</button>
+        </div>
+        <div class="gem-tiny-text news-item-stats">
+          <i class="icon ion-clock"></i> 2 days ago
+          <span class="news-comment-summary">
+            <i class="icon ion-heart"></i> 2 
+            <i class="icon ion-chatbubble"></i> 3
+          </span>
+        </div>
+      </div>
+      <div class="news-more-action">
+        <i class="icon ion-more"></i>
+      </div>
+
+    </div>
+
+    <div class="news-media">
+      <div class="image">
+        <img src="img/gemionic/news-image.jpg" alt="" class="fluid-image">
+        <div class="media-social-stats">
+          <button class="button button-borderless button-small button-assertive">
+            <i class="ion-heart"></i> 3440
+          </button>
+        </div>
+      </div>
+      <div class="news-media-info">
+        <div class="thumb">
+          <img src="img/gemionic/sqr-box.jpg" alt="" class="img">
+        </div>
+        <div class="text">
+          <h3 class="title">Daft Punk</h3>
+          <h5 class="subtitle">Discovery</h5>
+        </div>
+        <div class="media-action">
+          <i class="icon ion-play"></i>
+        </div>
+      </div>
+    </div>
+    <div class="news-item">
+      <div class="news-thumb">
+        <img src="img/gemionic/profile-image.jpg" alt="" class="img">
+      </div>
+      <div class="news-content">
+        <h4>Roberta Simmons</h4>
+        <div class="gem-tiny-text news-item-stats">
+          <i class="icon ion-clock"></i> 2 days ago 
+          <span class="news-comment-summary">
+            <i class="icon ion-heart"></i> 2 
+            <i class="icon ion-chatbubble"></i> 3
+          </span>
+        </div>
+      </div>
+      <div class="news-more-action">
+        <i class="icon ion-more"></i>
+      </div>
+    </div>
+    <div class="news-media">
+      <img src="img/gemionic/gmap.jpg" alt="" class="fluid-image">
+      <div class="media-social-stats">
+          <span class="news-comment-summary">
+            <i class="icon ion-heart"></i> 2 
+            <i class="icon ion-chatbubble"></i> 3
+          </span>
+        </div>
+    </div> -->
+  </ion-content>
+</ion-view>
