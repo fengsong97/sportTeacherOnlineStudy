@@ -16,7 +16,7 @@
           <img src="img/gemionic/profile-image.jpg" class="gem-profile-image" alt="">
         </div>
         <div class="col col-50">
-          <h5 class="title">刘海燕</h5>
+          <h5 class="title">{{loginData.username}}</h5>
           <h6 class="action-links">中国,唐山</h6>
         </div>
         <div class="col col-25 gem-text-center" ng-href="#/app/profile"> 
@@ -43,6 +43,8 @@
         <ion-item nav-clear menu-close href="#/app/news">最新体育资讯</ion-item>
         <ion-item nav-clear menu-close href="#/app/profile">进入个人主页</ion-item>
         <ion-item nav-clear menu-close href="#/app/start">更多精彩,敬请期待</ion-item>
+        <ion-item nav-clear ></ion-item>
+        <ion-item nav-clear menu-close href="#/login">注销登录</ion-item>
 
 <!-- <ion-item nav-clear ></ion-item><ion-item nav-clear ></ion-item>
         <ion-item nav-clear menu-close href="#/app/feed">Feed</ion-item>

@@ -1,80 +1,13 @@
-<ion-view title="详情" hide-nav-bar="true">
+<ion-view title="详情" hide-nav-bar="false">
  <ion-nav-buttons side="left">
-    <!-- <button menu-toggle="left" class="button button-icon icon ion-navicon"></button> -->
+    <button  class="button button-icon "></button>
   </ion-nav-buttons>
   <ion-content class="gem-ion-content single-post">
-
-    <div class="gem-post-media">
-      <div class="topbar">
-        <div class="row">
-          <div class="col col-25">
-            <button ng-click="goBack()" class="button button-small button-icon icon ion-navicon-round gem-white"></button>
-          </div>
-          <div class="col col-50 text-center gem-white">
-            <h4>详情</h4>
-          </div>
-          <div class="col col-25 gem-text-right gem-white">
-            <!-- <button class="button button-small button-icon icon ion-search gem-white"></button> -->
-          </div>
-        </div>
-      </div>
-      <div style="height: 60px;"></div>
-      <img ng-src="{{detail.image_url||detail}}" alt="" class="fluid-image" style="vertical-align:top;">
-      <h3 class="post-stat text-center"><i class="ion-fireball gem-white"></i> 352 <i class="ion-heart gem-white"></i> 352</h3>
-      <div class="bottombar-and-shadow"></div>
-    </div>
     <div class="gem-post-content">
+    <img ng-src="{{detail.image_url||detail}}" alt="" class="fluid-image" style="vertical-align:top;">
       <h2>{{detail.title}}</h2>
       <p>{{detail.abstract}}</p>
-      
       <p class="post-date" ng-if="detail.behot_time"><i class="ion-ios7-clock"></i>{{detail.behot_time*1000 |date:'yyyy-MM-dd HH:mm:ss'}}</p>
-  
-
-  
-      <!-- Comment Section -->
-  <!--     <div class="article-comments">
-        <div class="comment-item">
-          <img src="img/gemionic/profile-image.jpg" alt="" class="comment-profile-pic">
-          <div class="comment-text">
-            <h4 class="bold">Roberta Simmons</h4>
-            <div class="comment-date"><i class="icon ion-clock"></i> 2 days ago </div>
-            <div class="comment">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur delectus quod, harum et incidunt illo atque, praesentium repellendus eligendi.
-            </div>
-          </div>
-        </div>
-        <div class="comment-item">
-          <img src="img/gemionic/profile-image.jpg" alt="" class="comment-profile-pic">
-          <div class="comment-text">
-            <h4 class="bold">Roberta Simmons</h4>
-            <div class="comment-date"><i class="icon ion-clock"></i> 2 days ago </div>
-            <div class="comment">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur delectus quod, harum et incidunt illo atque, praesentium repellendus eligendi.
-            </div>
-          </div>
-        </div>
-        <div class="comment-item">
-          <img src="img/gemionic/profile-image.jpg" alt="" class="comment-profile-pic">
-          <div class="comment-text">
-            <h4 class="bold">Roberta Simmons</h4>
-            <div class="comment-date"><i class="icon ion-clock"></i> 2 days ago </div>
-            <div class="comment">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur delectus quod, harum et incidunt illo atque, praesentium repellendus eligendi.
-            </div>
-          </div>
-        </div>
-        <div class="comment-item">
-          <img src="img/gemionic/profile-image.jpg" alt="" class="comment-profile-pic">
-          <div class="comment-text">
-            <h4 class="bold">Roberta Simmons</h4>
-            <div class="comment-date"><i class="icon ion-clock"></i> 2 days ago </div>
-            <div class="comment">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequatur delectus quod, harum et incidunt illo atque, praesentium repellendus eligendi.
-            </div>
-          </div>
-        </div>
-      </div> -->
-  
     </div>
   </ion-content>
 </ion-view>
